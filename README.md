@@ -1,2 +1,3 @@
-# stuff
-A place for odd things for you to download
+# stuhf
+
+Go here: https://cwylycode.github.io/stuff
