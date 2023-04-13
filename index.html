@@ -5,11 +5,127 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="https://github.com/cwylycode/cwylycode.github.io/raw/main/favicon.png" type="image/x-icon">
+  <link rel="stylesheet" href="https://cdn.simplecss.org/simple.min.css">
   <title>Some Extra Stuff</title>
+  <style>
+    :root {
+      --accent: #00b03d;
+    }
+
+    @media (prefers-color-scheme:dark) {
+      :root {
+        --accent: rgb(54, 199, 252);
+      }
+
+      .img[src="no_image.png"] {
+        filter: invert();
+      }
+    }
+
+    h1,
+    h5 {
+      color: var(--accent)
+    }
+
+    h5 {
+      margin-top: 0;
+      margin-bottom: 0.5rem;
+    }
+
+    img {
+      opacity: 1;
+    }
+
+    #eatguy {
+      border-radius: 10%;
+      box-shadow: 4px 10px 10px 10px #111;
+      width: 300px;
+    }
+
+    .download {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 3rem;
+    }
+
+    .content {
+      text-align: center;
+      width: 100%;
+    }
+
+    .download p {
+      font-size: 1rem;
+    }
+
+    .img {
+      max-width: 200px;
+      max-height: 300px;
+    }
+
+    a.button {
+      display: block;
+    }
+
+    @media only screen and (max-width: 720px) {
+      .download {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .text h5 {
+        text-align: center;
+      }
+
+      a.button {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 300px;
+      }
+    }
+  </style>
 </head>
 
 <body>
-  <h1>TEST</h1>
+  <header>
+    <h1>MY STUFF</h1>
+    <img id='eatguy' src="eatguy.jpg" alt="Some sweaty guy eatin the frickin internet!" title="*NOM*">
+    <h4>Here is some non-code related stuff that you can download!</h4>
+  </header>
+  <main>
+    <!-- inevitability -->
+    <section>
+      <div class="notice download">
+        <div class="content">
+          <img class="img" src="inevitability.jpg" alt="">
+          <a class='button' href="Inevitability-ebook.pdf">Download</a>
+        </div>
+        <div class="text">
+          <h5>The Inevitability - ebook</h5>
+          <p>This is a FREE, full-length sci-fi novel that I wrote about a prisoner who escapes and is forced to save the world from monsters.<br /><br />It's a gritty tale that took many years (on and off) to write it, but I'm glad I got it finished.<br /><br />I'm sure you'll enjoy it - I've been told it's quite the page-turner!</p>
+        </div>
+      </div>
+    </section>
+    <!-- test -->
+    <!-- <section>
+      <div class="notice download">
+        <div class="content">
+          <img class="img" src="no_image.png" alt="">
+          <a class='button' href="#">Download</a>
+        </div>
+        <div class="text">
+          <h5>This is only a test</h5>
+          <p>This is a test of the emergency broadcasting system.<br /><br />Had this been a real emergency, you would probably poop in your pants and scream like a little girl.</p>
+        </div>
+      </div>
+    </section> -->
+    <!-- etc -->
+  </main>
+  <footer>
+    <p>...More to come (if you're lucky)...</p>
+  </footer>
 </body>
 
 </html>
